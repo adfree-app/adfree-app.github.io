@@ -178,7 +178,7 @@ export const vi: Copy = {
     kicker: 'Ảnh chụp',
     title: 'Ứng dụng trên từng nền tảng',
     body:
-      'Ảnh chụp từ bản dựng phát hành, không phải ảnh mô phỏng. Ứng dụng điện thoại và bản máy tính dựng cùng những màn hình Compose trên cùng một lõi.',
+      'Ảnh chụp từ bản dựng phát hành. Ứng dụng điện thoại và bản máy tính dựng cùng những màn hình Compose trên cùng một lõi.',
     platforms: [
       {
         id: 'android',
@@ -235,7 +235,7 @@ export const vi: Copy = {
     title: 'Tải về',
     body:
       'Các tệp dưới đây lấy từ bản phát hành mới nhất, do CI dựng từ tag. Chọn nền tảng của bạn; gói nào cũng kèm sẵn runtime.',
-    note: 'Không tài khoản, không đăng ký. Nếu bản dựng không hợp, mã nguồn vẫn ở đó.',
+    note: 'Không tài khoản, không đăng ký.',
     install: {
       label: 'Cài trên Linux bằng một câu lệnh',
       body:
@@ -279,7 +279,7 @@ export const vi: Copy = {
       copied: 'Đã chép',
       action: 'Sao chép số tài khoản',
     },
-    note: 'Cảm ơn bạn. Ủng hộ không mua được tính năng riêng: bản phát hành vẫn giống nhau cho mọi người.',
+    note: 'Bản phát hành giống nhau cho mọi người, có ủng hộ hay không.',
   },
   faq: {
     kicker: 'Hỏi đáp',
@@ -340,7 +340,7 @@ export const vi: Copy = {
   },
   changelog: {
     title: 'Nhật ký thay đổi',
-    body: 'Từng bản phát hành, đúng như các commit viết nên. Đọc thẳng từ kho của app trên GitHub, nên trang này không thể cũ hơn file gốc.',
+    body: 'Từng bản phát hành, đúng như các commit viết nên. Đọc thẳng từ kho của app trên GitHub.',
     back: 'Về trang chính',
     loading: 'Đang tải nhật ký…',
     onGithub: 'Mở trên GitHub',

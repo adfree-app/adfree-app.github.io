@@ -175,7 +175,7 @@ export const zh: Copy = {
   shots: {
     kicker: '截图',
     title: '各平台上的样子',
-    body: '这些是发布版本的实际截图，不是效果图。手机版和桌面版在同一内核上跑同一套 Compose 界面。',
+    body: '这些是发布版本的实际截图。手机版和桌面版在同一内核上跑同一套 Compose 界面。',
     platforms: [
       {
         id: 'android',
@@ -227,7 +227,7 @@ export const zh: Copy = {
     title: '下载',
     body:
       '下面的文件来自 CI 从标签发布的最新版本。选你的平台即可；每个包里都自带运行环境。',
-    note: '不需要账号，也不用注册。如果哪个包在你这里跑不起来，源码都在仓库里。',
+    note: '不需要账号，也不用注册。',
     install: {
       label: 'Linux 一行命令安装',
       body:
@@ -270,7 +270,7 @@ export const zh: Copy = {
       copied: '已复制',
       action: '复制账号',
     },
-    note: '谢谢。赞助买不到任何功能：每个人拿到的版本都一样。',
+    note: '赞助与否，每个人拿到的版本都一样。',
   },
   faq: {
     kicker: '常见问题',
@@ -330,7 +330,7 @@ export const zh: Copy = {
   },
   changelog: {
     title: '更新日志',
-    body: '每一次发布，就按提交本来的样子。直接从 GitHub 上的应用仓库读取，所以这一页永远不会比文件更旧。',
+    body: '每一次发布，就按提交本来的样子。直接从 GitHub 上的应用仓库读取。',
     back: '回到首页',
     loading: '正在读取更新日志…',
     onGithub: '在 GitHub 上打开',

@@ -180,7 +180,7 @@ export const en: Copy = {
   shots: {
     kicker: 'Screenshots',
     title: 'The app on each platform',
-    body: 'Screenshots of the released builds, not mockups. The phone app and the desktop builds run the same Compose screens over the same core.',
+    body: 'Screenshots of the released builds. The phone app and the desktop builds run the same Compose screens over the same core.',
     platforms: [
       {
         id: 'android',
@@ -235,7 +235,7 @@ export const en: Copy = {
     title: 'Download',
     body:
       'The files below are from the latest release, published by CI from the tag. Pick your platform; every package includes its own runtime.',
-    note: 'No account and no sign-up. If a build does not work for you, the source is all there.',
+    note: 'No account and no sign-up.',
     install: {
       label: 'Install on Linux with one command',
       body:
@@ -278,7 +278,7 @@ export const en: Copy = {
       copied: 'Copied',
       action: 'Copy account number',
     },
-    note: 'Thank you. Sponsoring does not buy a feature: the releases stay the same for everyone.',
+    note: 'Every release is the same for everyone, sponsored or not.',
   },
   faq: {
     kicker: 'FAQ',
@@ -339,7 +339,7 @@ export const en: Copy = {
   },
   changelog: {
     title: 'Changelog',
-    body: 'Every release, as written by its commits. Read straight from the app\'s repository on GitHub, so the page can never be older than the file.',
+    body: 'Every release, as written by its commits. Read straight from the app\'s repository on GitHub.',
     back: 'Back to the site',
     loading: 'Loading the changelog…',
     onGithub: 'Open it on GitHub',

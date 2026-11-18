@@ -5,8 +5,7 @@ import { copy } from '@/i18n'
 
 <template>
   <!-- The section that shows the thing people actually check first: a video
-       playing with no pre-roll. The capture is the released build's browser,
-       not a mockup — same rule as the rest of the shots on this page. -->
+       playing with no pre-roll. -->
   <section id="youtube" class="border-t border-default py-20 sm:py-28">
     <UContainer>
       <div class="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
