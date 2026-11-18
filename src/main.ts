@@ -7,6 +7,7 @@ import App from './App.vue'
 import HomePage from './pages/HomePage.vue'
 import ChangelogPage from './pages/ChangelogPage.vue'
 import SponsorPage from './pages/SponsorPage.vue'
+import InstallExtensionPage from './pages/InstallExtensionPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +15,7 @@ const router = createRouter({
     { path: '/', name: 'home', component: HomePage },
     { path: '/changelog', name: 'changelog', component: ChangelogPage },
     { path: '/sponsor', name: 'sponsor', component: SponsorPage },
+    { path: '/extension', name: 'install-extension', component: InstallExtensionPage },
   ],
   scrollBehavior(to) {
     if (to.hash) return { el: to.hash, behavior: 'smooth' }

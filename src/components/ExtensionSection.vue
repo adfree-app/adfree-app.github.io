@@ -31,12 +31,11 @@ import { copy } from '@/i18n'
           </ul>
           <div class="mt-8 flex flex-wrap items-center gap-3">
             <UButton
-              :to="'/adfree-extension.zip'"
+              :to="'/extension'"
               color="primary"
               size="lg"
               icon="i-lucide-download"
               class="rounded-xl"
-              download
             >
               {{ copy.extension.download }}
             </UButton>

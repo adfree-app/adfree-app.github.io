@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { copy } from '@/i18n'
+import { APP, EXTENSION } from '@/github'
 
 const year = new Date().getFullYear()
 const from = 2026
@@ -10,16 +11,20 @@ const product = computed(() => [
   { label: copy.value.nav.features, href: '/#features' },
   { label: copy.value.nav.screenshots, href: '/#screenshots' },
   { label: copy.value.nav.platforms, href: '/#platforms' },
+  { label: copy.value.nav.extension, href: '/extension' },
   { label: copy.value.nav.changelog, href: '/changelog' },
   { label: copy.value.nav.faq, href: '/#faq' },
   { label: copy.value.sponsor.kicker, href: '/sponsor' },
 ])
 
+const appUrl = `https://github.com/${APP.owner}/${APP.repo}`
+
 const project = computed(() => [
-  { label: copy.value.footer.source, href: 'https://github.com/yuuki-kagura/adfree' },
-  { label: copy.value.footer.releases, href: 'https://github.com/yuuki-kagura/adfree/releases' },
-  { label: copy.value.footer.issues, href: 'https://github.com/yuuki-kagura/adfree/issues' },
-  { label: copy.value.footer.design, href: 'https://github.com/yuuki-kagura/adfree/blob/main/DESIGN.md' },
+  { label: copy.value.footer.source, href: appUrl },
+  { label: copy.value.footer.releases, href: `${appUrl}/releases` },
+  { label: copy.value.footer.issues, href: `${appUrl}/issues` },
+  { label: copy.value.footer.design, href: `${appUrl}/blob/${APP.branch}/DESIGN.md` },
+  { label: copy.value.nav.extension, href: `https://github.com/${EXTENSION.owner}/${EXTENSION.repo}` },
 ])
 </script>
 

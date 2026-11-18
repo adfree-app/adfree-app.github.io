@@ -5,18 +5,22 @@ import { marked } from 'marked'
 import SiteHeader from '@/components/SiteHeader.vue'
 import SiteFooter from '@/components/SiteFooter.vue'
 import { copy } from '@/i18n'
+import { CHANGELOG_PAGE, CHANGELOG_URL } from '@/github'
 
 type State = 'loading' | 'ready' | 'error'
 
 const state = ref<State>('loading')
 const markdown = ref('')
+const openOnGithub = CHANGELOG_PAGE
 
-// Read the changelog with a fetch and render it here. The visitor never leaves
-// the page and no raw URL is opened in their browser.
+// The changelog lives in the app's repository and is read from GitHub at
+// request time. There is deliberately no copy step: a build that fetched it
+// would be shipping whatever was on disk when it ran, which is exactly the
+// stale page the raw read exists to avoid.
 async function load() {
   state.value = 'loading'
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}changelog.md`, { cache: 'no-cache' })
+    const response = await fetch(CHANGELOG_URL, { cache: 'no-cache' })
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`)
     markdown.value = await response.text()
     state.value = markdown.value.trim() ? 'ready' : 'error'
@@ -54,11 +58,33 @@ const html = computed(() => {
         <p v-if="state === 'loading'" class="mt-10 text-sm text-muted">
           {{ copy.changelog.loading }}
         </p>
-        <p v-else-if="state === 'error'" class="mt-10 text-sm text-danger">
-          {{ copy.changelog.error }}
-        </p>
+        <div v-else-if="state === 'error'" class="mt-10">
+          <p class="text-sm text-danger">
+            {{ copy.changelog.error }}
+          </p>
+          <a
+            :href="openOnGithub"
+            target="_blank"
+            rel="noopener"
+            class="mt-3 inline-flex items-center gap-2 text-sm text-primary transition hover:text-highlighted"
+          >
+            {{ copy.changelog.onGithub }}
+            <UIcon name="i-lucide-external-link" class="size-4" />
+          </a>
+        </div>
 
         <article v-else class="changelog mt-12" v-html="html" />
+
+        <a
+          v-if="state === 'ready'"
+          :href="openOnGithub"
+          target="_blank"
+          rel="noopener"
+          class="mt-8 inline-flex items-center gap-2 text-sm text-primary transition hover:text-highlighted"
+        >
+          {{ copy.changelog.onGithub }}
+          <UIcon name="i-lucide-external-link" class="size-4" />
+        </a>
 
         <RouterLink
           to="/"

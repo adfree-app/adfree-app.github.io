@@ -21,6 +21,7 @@ export type Copy = {
     screenshots: string
     platforms: string
     changelog: string
+    extension: string
     faq: string
   }
   cta: { download: string; howItWorks: string; getBuild: string; latestRelease: string; source: string }
@@ -103,5 +104,25 @@ export type Copy = {
     madeWith: string
     rights: string
   }
-  changelog: { title: string; body: string; back: string; loading: string; error: string; empty: string }
+  changelog: {
+    title: string
+    body: string
+    back: string
+    loading: string
+    error: string
+    onGithub: string
+    empty: string
+  }
+  /** The /extension page: the guide a person follows once. */
+  install: {
+    kicker: string
+    title: string
+    body: string
+    steps: { title: string; body: string }[]
+    shots: { loadAlt: string; installedAlt: string; caption: string }[]
+    download: string
+    source: string
+    note: string
+    back: string
+  }
 }

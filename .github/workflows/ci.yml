@@ -1,0 +1,62 @@
+name: ci
+
+# The site is static: this builds it, and a push to main publishes it. Nothing
+# else has a copy — the changelog is read from the app's repository at request
+# time and the extension zip from its releases, so there is no vendored file
+# here to go stale.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: install
+        run: bun install --frozen-lockfile
+
+      # vue-tsc is part of the build: a key missing from one of the four
+      # content files is a hole in the page, and it fails here rather than
+      # shipping.
+      - name: typecheck
+        run: bun run typecheck
+
+      - name: build
+        run: bun run build
+        env:
+          # A project site is served from /<repo>/; a custom domain is not. Set
+          # the repository variable SITE_BASE to switch between them.
+          SITE_BASE: ${{ vars.SITE_BASE || '/' }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
