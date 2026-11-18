@@ -158,6 +158,19 @@ export const zh: Copy = {
     runTest: '自己测一次',
     getBuild: '下载',
   },
+  youtube: {
+    kicker: 'YouTube',
+    title: '视频照常播放，广告无法送达',
+    body:
+      'AdFree 在页面读取播放器响应之前就移除广告位，并拦下 YouTube 用来统计和投放广告的请求。无需点击跳过，也无需安装扩展。',
+    points: [
+      '片头、片中与 bumper 广告不会进入播放器',
+      '搜索和首页的赞助卡片一并移除',
+      '同一份过滤规则在网络上拦下广告请求',
+    ],
+    alt: '经 AdFree 过滤后无广告播放的 LiSA《一番の宝物》',
+    caption: '经 AdFree 打开的 YouTube：一个视频，没有广告时段。',
+  },
   shots: {
     kicker: '截图',
     title: '各平台上的样子',

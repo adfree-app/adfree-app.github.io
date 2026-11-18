@@ -163,6 +163,19 @@ export const en: Copy = {
     runTest: 'Run the test yourself',
     getBuild: 'Download',
   },
+  youtube: {
+    kicker: 'YouTube',
+    title: 'The video plays, the ads never arrive',
+    body:
+      'AdFree takes the ad placements out of the player response before the page reads it, and blocks the requests YouTube uses to count and sell them. Nothing to skip, no extension to install.',
+    points: [
+      'Pre-roll, mid-roll and bumper ads never reach the player',
+      'Sponsored cards in search and on the home feed are removed',
+      'The same filter list refuses the ad requests on the network',
+    ],
+    alt: 'YouTube playing 一番の宝物 by LiSA with no advertisement, filtered by AdFree',
+    caption: 'YouTube through AdFree: one video, no ad break.',
+  },
   shots: {
     kicker: 'Screenshots',
     title: 'The app on each platform',

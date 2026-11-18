@@ -4,6 +4,7 @@ import SiteFooter from '@/components/SiteFooter.vue'
 import PhoneFrame from '@/components/PhoneFrame.vue'
 import WindowFrame from '@/components/WindowFrame.vue'
 import ScreenshotShowcase from '@/components/ScreenshotShowcase.vue'
+import YouTubeSection from '@/components/YouTubeSection.vue'
 import DownloadTabs from '@/components/DownloadTabs.vue'
 import { copy } from '@/i18n'
 
@@ -224,6 +225,8 @@ const designNotes = 'https://github.com/yuuki-kagura/adfree/blob/main/DESIGN.md'
         </div>
       </UContainer>
     </section>
+
+    <YouTubeSection />
 
     <ScreenshotShowcase />
 

@@ -160,6 +160,19 @@ export const vi: Copy = {
     runTest: 'Tự chạy bài kiểm tra',
     getBuild: 'Tải về',
   },
+  youtube: {
+    kicker: 'YouTube',
+    title: 'Video chạy, quảng cáo không tới',
+    body:
+      'AdFree bỏ các vị trí quảng cáo khỏi phản hồi của trình phát trước khi trang kịp đọc, và chặn luôn những request YouTube dùng để đếm với bán quảng cáo. Không phải bấm bỏ qua, không cần cài extension.',
+    points: [
+      'Quảng cáo trước, giữa video và bumper không vào được trình phát',
+      'Thẻ được tài trợ trong tìm kiếm và ở trang chủ bị loại bỏ',
+      'Vẫn bộ lọc đó, chặn luôn các request quảng cáo ở tầng mạng',
+    ],
+    alt: 'YouTube phát bài 一番の宝物 của LiSA không có quảng cáo, qua bộ lọc AdFree',
+    caption: 'YouTube qua AdFree: một video, không có đoạn quảng cáo nào.',
+  },
   shots: {
     kicker: 'Ảnh chụp',
     title: 'Ứng dụng trên từng nền tảng',

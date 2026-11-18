@@ -1,3 +1,9 @@
+# [1.16.0](https://github.com/yuuki-kagura/adfree/compare/v1.15.1...v1.16.0) (2026-11-18)
+
+### Features
+
+* **website:** the landing page, in the repository ([7a572f2](https://github.com/yuuki-kagura/adfree/commit/7a572f25eb14d61f71ed4a2f5c9e4a0d4acd91c9))
+
 ## [1.15.1](https://github.com/yuuki-kagura/adfree/compare/v1.15.0...v1.15.1) (2026-11-18)
 
 ### Bug Fixes

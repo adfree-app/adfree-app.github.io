@@ -40,6 +40,7 @@ export type Copy = {
     runTest: string
     getBuild: string
   }
+  youtube: { kicker: string; title: string; body: string; points: string[]; alt: string; caption: string }
   shots: { kicker: string; title: string; body: string; platforms: ShotPlatform[] }
   platforms: { kicker: string; title: string; body: string; items: PlatformCard[]; getBuild: string }
   download: {

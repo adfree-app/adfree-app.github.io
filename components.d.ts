@@ -27,5 +27,6 @@ declare module 'vue' {
     UDropdownMenu: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/DropdownMenu.vue')['default']
     UIcon: typeof import('./node_modules/@nuxt/ui/dist/runtime/vue/components/Icon.vue')['default']
     WindowFrame: typeof import('./src/components/WindowFrame.vue')['default']
+    YouTubeSection: typeof import('./src/components/YouTubeSection.vue')['default']
   }
 }
