@@ -1,5 +1,0 @@
-# The Windows scripts are read by Windows PowerShell 5.1, which is happier with CRLF
-# and breaks on a stray non-ASCII character in a BOM-less file. Keep them as they
-# are on disk so a checkout does not silently turn them into something that fails
-# to parse on the machine they exist for.
-desktop/scripts/*.ps1 text eol=crlf

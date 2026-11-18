@@ -1,21 +1,32 @@
 {
-  "name": "adfree",
+  "name": "adfree-website",
   "private": true,
   "type": "module",
-  "description": "Dev tooling for the JavaScript the app injects into pages. Not shipped: the app itself is Gradle + Rust.",
-  "packageManager": "bun@1.4.3",
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:node": "vitest run rust/assets/redirects",
-    "test:playwright": "vitest run rust/src/mitm",
-    "lint": "eslint ."
+    "predev": "node scripts/sync-changelog.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/sync-changelog.mjs",
+    "changelog": "node scripts/sync-changelog.mjs",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc -b"
+  },
+  "dependencies": {
+    "marked": "^18.2.1",
+    "swiper": "^14.4.0",
+    "vue": "^3.5.45"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "eslint": "^10.15.0",
-    "globals": "^17.14.0",
-    "playwright": "^1.56.1",
-    "vitest": "^3.2.4"
+    "@iconify-json/lucide": "^1.2.156",
+    "@iconify-json/simple-icons": "^1.2.103",
+    "@nuxt/ui": "^4.12.2",
+    "@types/node": "^26.6.6",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "@vue/tsconfig": "^0.9.1",
+    "tailwindcss": "^4.3.5",
+    "typescript": "5.9",
+    "vite": "^8.3.8",
+    "vue-router": "^5.5.1",
+    "vue-tsc": "^3.3.14"
   }
 }
