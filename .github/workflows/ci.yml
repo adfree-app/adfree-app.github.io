@@ -42,10 +42,11 @@ jobs:
       - name: build
         run: bun run build
         env:
-          # A project site is served from /<repo>/. The default here matches
-          # the URL the app opens (`BROWSER_EXTENSION_GUIDE_URL`); a custom
-          # domain sets the repository variable SITE_BASE to '/'.
-          SITE_BASE: ${{ vars.SITE_BASE || '/adfree-website/' }}
+          # This is the organisation's root site — served from
+          # https://adfree-app.github.io/, which is the address the app opens
+          # (`BROWSER_EXTENSION_GUIDE_URL`). A custom domain would need a base
+          # of its own; nothing else does.
+          SITE_BASE: ${{ vars.SITE_BASE || '/' }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
