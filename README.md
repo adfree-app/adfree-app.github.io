@@ -50,4 +50,5 @@ that really loaded the extension (`scripts/capture-install-shots.js`).
 
 `bun run typecheck && bun run build`, then on a push to `main` the build is
 published to GitHub Pages. A project site is served from `/adfree/`, so set the
-repository variable `SITE_BASE=/adfree/` when it is not a custom domain.
+repository variable `SITE_BASE=/` (the default, `/adfree-website/`, is the
+project path).

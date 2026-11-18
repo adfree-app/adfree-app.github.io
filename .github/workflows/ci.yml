@@ -42,9 +42,10 @@ jobs:
       - name: build
         run: bun run build
         env:
-          # A project site is served from /<repo>/; a custom domain is not. Set
-          # the repository variable SITE_BASE to switch between them.
-          SITE_BASE: ${{ vars.SITE_BASE || '/' }}
+          # A project site is served from /<repo>/. The default here matches
+          # the URL the app opens (`BROWSER_EXTENSION_GUIDE_URL`); a custom
+          # domain sets the repository variable SITE_BASE to '/'.
+          SITE_BASE: ${{ vars.SITE_BASE || '/adfree-website/' }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
