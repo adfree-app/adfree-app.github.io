@@ -350,7 +350,7 @@ export const ja: Copy = {
     title: '拡張機能をインストール',
     body: '拡張機能は、ブラウザーに指示したときだけ入ります。4 ステップの一度きりの作業で、以後の更新は自動で届きます。',
     steps: [
-      { title: '最新リリースをダウンロード', body: 'zip には拡張機能一式が入っています：マニフェスト、background スクリプト1つ、アイコン4つ。' },
+      { title: '最新リリースをダウンロード', body: 'リリースには chrome 用と firefox 用の zip があり、どちらにも拡張機能一式が入っています：マニフェスト、background スクリプト1つ、アイコン4つ。' },
       { title: '残しておく場所に展開', body: 'ホームディレクトリ以下のフォルダーで構いません。Chrome は起動のたびに読むので、残しておいてください。' },
       { title: 'chrome://extensions を開き、デベロッパーモードを有効に', body: 'スイッチは右上にあります。' },
       { title: '「パッケージ化されていない拡張機能を読み込む」でそのフォルダーを選ぶ', body: 'カードが現れ、スイッチはすでにオンです。ツールバーに出すなら、パズルのピースのメニューからピン留めします。' },
@@ -361,7 +361,7 @@ export const ja: Copy = {
     ],
     download: '最新リリースをダウンロード',
     source: 'ソースを読む',
-    note: 'Chrome、Edge、Brave、Opera、Vivaldi。スクリーンショットは英語版 Chrome のものです。',
+    note: 'Chrome、Edge、Brave、Opera、Vivaldi は chrome zip を使います。Firefox は about:debugging で firefox zip の manifest.json を読み込み、Firefox を閉じるまで有効です。スクリーンショットは Chrome です。',
     back: 'サイトに戻る',
   },
 }

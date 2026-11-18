@@ -342,7 +342,7 @@ export const zh: Copy = {
     title: '安装扩展',
     body: '浏览器只在你要求时安装扩展。下面是四步的一次性操作，以后更新会自动到达。',
     steps: [
-      { title: '下载最新的发布', body: 'zip 里就是整个扩展：一个 manifest、一个后台脚本、四个图标。' },
+      { title: '下载最新的发布', body: '发布里有两个压缩包：一个给 chrome，一个给 firefox。每个都包含整个扩展：一份 manifest、一个后台脚本、四个图标。' },
       { title: '解压到一个你会保留的位置', body: '放在主目录下的文件夹即可。Chrome 每次启动都会读它，请保留。' },
       { title: '打开 chrome://extensions，开启开发者模式', body: '开关在右上角。' },
       { title: '点“加载已解压的扩展程序”，选中那个文件夹', body: '卡片出现时开关已经打开。想在工具栏看到它，就从拼图菜单里固定。' },
@@ -353,7 +353,7 @@ export const zh: Copy = {
     ],
     download: '下载最新发布',
     source: '阅读源码',
-    note: 'Chrome、Edge、Brave、Opera 和 Vivaldi。截图来自英文界面的 Chrome。',
+    note: 'Chrome、Edge、Brave、Opera 和 Vivaldi 用 chrome 包。Firefox 在 about:debugging 里加载 firefox 包中的 manifest.json，关闭 Firefox 后失效。截图来自 Chrome。',
     back: '回到首页',
   },
 }

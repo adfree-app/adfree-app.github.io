@@ -352,7 +352,7 @@ export const vi: Copy = {
     title: 'Cài tiện ích',
     body: 'Trình duyệt chỉ cài tiện ích khi bạn bảo nó cài. Bốn bước dưới đây làm đúng việc đó một lần; sau đó bản cập nhật tự đến.',
     steps: [
-      { title: 'Tải bản phát hành mới nhất', body: 'File zip chứa cả tiện ích: một manifest, một background script, bốn icon.' },
+      { title: 'Tải bản phát hành mới nhất', body: 'Bản phát hành có một zip cho chrome và một cho firefox; mỗi zip chứa cả tiện ích: manifest, một background script, bốn icon.' },
       { title: 'Giải nén vào chỗ bạn sẽ giữ', body: 'Một thư mục trong home là đủ. Chrome đọc thư mục đó mỗi lần mở, nên giữ lại.' },
       { title: 'Mở chrome://extensions và bật Developer mode', body: 'Công tắc ở góc trên bên phải.' },
       { title: 'Bấm Load unpacked rồi chọn thư mục đó', body: 'Thẻ hiện ra với công tắc đã bật. Muốn thấy nó trên thanh công cụ thì ghim từ menu mảnh ghép.' },
@@ -363,7 +363,7 @@ export const vi: Copy = {
     ],
     download: 'Tải bản mới nhất',
     source: 'Đọc mã nguồn',
-    note: 'Chrome, Edge, Brave, Opera và Vivaldi. Ảnh chụp là Chrome, giao diện tiếng Anh.',
+    note: 'Chrome, Edge, Brave, Opera và Vivaldi dùng zip chrome. Firefox nạp manifest.json trong zip firefox ở about:debugging, và giữ nó tới khi đóng Firefox. Ảnh chụp là Chrome.',
     back: 'Về trang chủ',
   },
 }

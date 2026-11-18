@@ -351,7 +351,7 @@ export const en: Copy = {
     title: 'Install the extension',
     body: 'A browser installs an extension when you tell it to. Four steps, once; updates arrive on their own afterwards.',
     steps: [
-      { title: 'Download the latest release', body: 'The zip holds the whole extension: a manifest, one background script, four icons.' },
+      { title: 'Download the latest release', body: 'The release carries a chrome zip and a firefox zip; each holds the whole extension: a manifest, one background script, four icons.' },
       { title: 'Unpack it somewhere you will keep', body: 'A folder under your home directory is fine. Chrome reads it on every start, so keep it.' },
       { title: 'Open chrome://extensions and switch on Developer mode', body: 'The toggle is in the top-right corner.' },
       { title: 'Press Load unpacked and pick that folder', body: 'The card appears with its switch already on. Pin it from the puzzle-piece menu if you want it on the toolbar.' },
@@ -362,7 +362,7 @@ export const en: Copy = {
     ],
     download: 'Download the latest release',
     source: 'Read the source',
-    note: 'Chrome, Edge, Brave, Opera and Vivaldi. The screenshots are Chrome, in English.',
+    note: 'Chrome, Edge, Brave, Opera and Vivaldi take the chrome zip. Firefox loads manifest.json from the firefox zip in about:debugging, and keeps it until Firefox closes. Screenshots are Chrome.',
     back: 'Back to the site',
   },
 }
