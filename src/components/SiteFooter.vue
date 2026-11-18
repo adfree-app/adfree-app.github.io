@@ -11,7 +11,7 @@ const product = computed(() => [
   { label: copy.value.nav.features, href: '/#features' },
   { label: copy.value.nav.screenshots, href: '/#screenshots' },
   { label: copy.value.nav.platforms, href: '/#platforms' },
-  { label: copy.value.nav.extension, href: '/extension' },
+  { label: copy.value.nav.extension, href: '/install-extension' },
   { label: copy.value.nav.changelog, href: '/changelog' },
   { label: copy.value.nav.faq, href: '/#faq' },
   { label: copy.value.sponsor.kicker, href: '/sponsor' },

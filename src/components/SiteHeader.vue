@@ -18,7 +18,7 @@ const links = computed(() => [
   { label: copy.value.nav.how, href: '/#how' },
   { label: copy.value.nav.screenshots, href: '/#screenshots' },
   { label: copy.value.nav.platforms, href: '/#platforms' },
-  { label: copy.value.nav.extension, href: '/extension' },
+  { label: copy.value.nav.extension, href: '/install-extension' },
   { label: copy.value.nav.changelog, href: '/changelog' },
   { label: copy.value.nav.faq, href: '/#faq' },
 ])

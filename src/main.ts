@@ -15,7 +15,7 @@ const router = createRouter({
     { path: '/', name: 'home', component: HomePage },
     { path: '/changelog', name: 'changelog', component: ChangelogPage },
     { path: '/sponsor', name: 'sponsor', component: SponsorPage },
-    { path: '/extension', name: 'install-extension', component: InstallExtensionPage },
+    { path: '/install-extension', name: 'install-extension', component: InstallExtensionPage },
   ],
   scrollBehavior(to) {
     if (to.hash) return { el: to.hash, behavior: 'smooth' }
