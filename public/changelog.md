@@ -1,3 +1,13 @@
+## [1.15.1](https://github.com/yuuki-kagura/adfree/compare/v1.15.0...v1.15.1) (2026-11-18)
+
+### Bug Fixes
+
+* **website:** one set of desktop captures, and a phone with no cutout ([55574cb](https://github.com/yuuki-kagura/adfree/commit/55574cbd444e37a9ea5f060812edc88d613d8642))
+
+### Reverts
+
+* take the landing page back out of the repository ([b7bf2c6](https://github.com/yuuki-kagura/adfree/commit/b7bf2c64934f40800c9dd486d75b8fc791b9c3b0))
+
 # [1.15.0](https://github.com/yuuki-kagura/adfree/compare/v1.14.1...v1.15.0) (2026-11-17)
 
 ### Features
