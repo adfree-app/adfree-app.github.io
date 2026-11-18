@@ -9,14 +9,6 @@ import ChangelogPage from './pages/ChangelogPage.vue'
 import SponsorPage from './pages/SponsorPage.vue'
 import InstallExtensionPage from './pages/InstallExtensionPage.vue'
 
-// GitHub Pages serves `404.html` for a route it has no file for, and that file
-// asks to have the real path put back here. One redirect, then the address bar
-// shows the deep link the visitor asked for.
-const parked = new URLSearchParams(location.search).get('redirect')
-if (parked && parked !== '/' && parked.startsWith('/')) {
-  history.replaceState(null, '', import.meta.env.BASE_URL.replace(/\/$/, '') + parked)
-}
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

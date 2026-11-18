@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Every route is prerendered to its own HTML file at build time, so a deep link
+  is a 200 instead of a 404 that redirects itself.
+- The install guide names both extension zips and Firefox's `about:debugging`
+  path, in four languages.
+- The copy states the fact and stops: no "not a mockup", no "so the page can
+  never be older", no "the source is all there".
+
 The site is versioned with its own content, not with the app or the extension:
 it reads both of those at request time.
 

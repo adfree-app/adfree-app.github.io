@@ -11,9 +11,25 @@ the build contains no copy of either.
 bun install
 bun run dev         # http://localhost:5173
 bun run typecheck   # vue-tsc: a key missing from one language fails the build
-bun run build       # typecheck + vite build -> dist/
+bun run build       # vite build, then prerender every route -> dist/
 bun run preview     # serve dist/
 ```
+
+## Routes are files
+
+The app is a Vue router app on a host that only serves files. `vite build`
+leaves one `index.html`, so `/changelog` is a 404 with a script in it — which is
+what a crawler sees and what a shared link hits first.
+
+`scripts/prerender.mjs` closes that: it serves the build, opens each route in
+headless Chrome over the DevTools protocol, and writes the document Chrome ended
+up with to `dist/<route>/index.html`. Every route is then a 200 on Pages. The
+client is unchanged — Vue mounts over the captured markup and re-reads the
+release list and the changelog — so what is baked in is a first paint, not a
+frozen number.
+
+The route list lives in that script and mirrors `src/main.ts`; a page added to
+one has to be added to the other, and CI fails if a route file is missing.
 
 ## Languages
 

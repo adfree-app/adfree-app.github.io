@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build && bun scripts/prerender.mjs",
     "preview": "vite preview",
-    "typecheck": "vue-tsc -b"
+    "typecheck": "vue-tsc -b",
+    "prerender": "bun scripts/prerender.mjs"
   },
   "dependencies": {
     "marked": "^18.2.1",

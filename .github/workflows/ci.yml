@@ -1,9 +1,9 @@
 name: ci
 
-# The site is static: this builds it, and a push to main publishes it. Nothing
-# else has a copy — the changelog is read from the app's repository at request
-# time and the extension zip from its releases, so there is no vendored file
-# here to go stale.
+# The site is static: this builds it, renders each route to a file, and a push
+# to main publishes it. Nothing else has a copy — the changelog is read from the
+# app's repository at request time and the extension zip from its releases, so
+# there is no vendored file here to go stale.
 
 on:
   push:
@@ -48,10 +48,21 @@ jobs:
           # of its own; nothing else does.
           SITE_BASE: ${{ vars.SITE_BASE || '/' }}
 
+      # A route that exists only as a script tag is a 404 on Pages. The build
+      # prerenders one file per route; this is the line that notices when it
+      # stops. (runs-on ubuntu-latest ships Google Chrome, which prerender
+      # drives over the DevTools protocol.)
+      - name: every route is a file
+        run: |
+          for route in changelog sponsor install-extension; do
+            test -s "dist/$route/index.html" || { echo "dist/$route/index.html is missing"; exit 1; }
+          done
+          grep -q '<h1' dist/install-extension/index.html
+          grep -q '<h1' dist/changelog/index.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
   deploy:
     # A dispatch is how a deploy is retried without an empty commit.
     if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
