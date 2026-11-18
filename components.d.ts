@@ -12,6 +12,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     DownloadTabs: typeof import('./src/components/DownloadTabs.vue')['default']
+    ExtensionSection: typeof import('./src/components/ExtensionSection.vue')['default']
     PhoneFrame: typeof import('./src/components/PhoneFrame.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

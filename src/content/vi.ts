@@ -173,6 +173,26 @@ export const vi: Copy = {
     alt: 'YouTube phát bài 一番の宝物 của LiSA không có quảng cáo, qua bộ lọc AdFree',
     caption: 'YouTube qua AdFree: một video, không có đoạn quảng cáo nào.',
   },
+  extension: {
+    kicker: 'Trong trình duyệt',
+    title: 'Những trang AdFree không nhìn thấy',
+    body: 'Trình duyệt có thể tự trả lời một trang từ cache của nó: service worker đưa ra HTML chưa từng đi qua dây mạng, nên app không có gì để sửa. Tiện ích bịt đúng chỗ đó — và nó không mang luật nào cả: không danh sách, không quy tắc riêng. Nó hỏi app xem cần chèn gì rồi chèn y như vậy, nên cả hai đường đều chặn cùng một thứ.',
+    points: [
+      'Chạy được trên trang mà service worker trả từ cache',
+      'Không có luật riêng: mọi câu trả lời đến từ app',
+      'Không bắt buộc — không cài vẫn lọc được',
+    ],
+    download: 'Tải tiện ích',
+    note: 'Thư mục chưa đóng gói, 20 KB',
+    cardName: 'AdFree page runtime',
+    cardVersion: 'Manifest V3 · Chrome 111+ · cả Edge, Brave, Opera',
+    steps: [
+      'Mở chrome://extensions trong trình duyệt',
+      'Bật Developer mode',
+      'Load unpacked → chọn thư mục app AdFree đã ghi giúp bạn',
+    ],
+    footnote: 'Trong app: Protection → Ad blocking → Extensions → Install for this browser sẽ ghi thư mục đó và copy đường dẫn.',
+  },
   shots: {
     kicker: 'Ảnh chụp',
     title: 'Ứng dụng trên từng nền tảng',

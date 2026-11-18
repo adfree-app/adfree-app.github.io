@@ -41,6 +41,18 @@ export type Copy = {
     getBuild: string
   }
   youtube: { kicker: string; title: string; body: string; points: string[]; alt: string; caption: string }
+  extension: {
+    kicker: string
+    title: string
+    body: string
+    points: string[]
+    download: string
+    note: string
+    cardName: string
+    cardVersion: string
+    steps: string[]
+    footnote: string
+  }
   shots: { kicker: string; title: string; body: string; platforms: ShotPlatform[] }
   platforms: { kicker: string; title: string; body: string; items: PlatformCard[]; getBuild: string }
   download: {

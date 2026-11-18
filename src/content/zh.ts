@@ -171,6 +171,26 @@ export const zh: Copy = {
     alt: '经 AdFree 过滤后无广告播放的 LiSA《一番の宝物》',
     caption: '经 AdFree 打开的 YouTube：一个视频，没有广告时段。',
   },
+  extension: {
+    kicker: '在浏览器里',
+    title: 'AdFree 看不到的那些页面',
+    body: '浏览器可以从自己的缓存里交付页面：Service Worker 交出的 HTML 从未经过网络，应用也就无从改写。扩展补的正是这个缺口 —— 它本身不含任何规则，没有列表，也没有自己的逻辑。它向应用询问应当注入什么，再照着注入，因此两条路径拦下的是同样的东西。',
+    points: [
+      'Service Worker 从缓存返回的页面同样生效',
+      '没有自己的规则：每个答案都来自应用',
+      '可选：不装也能过滤',
+    ],
+    download: '下载扩展',
+    note: '未打包的文件夹，20 KB',
+    cardName: 'AdFree page runtime',
+    cardVersion: 'Manifest V3 · Chrome 111+ · 也支持 Edge、Brave、Opera',
+    steps: [
+      '在浏览器中打开 chrome://extensions',
+      '开启开发者模式',
+      '加载已解压的扩展程序 → 选择 AdFree 应用为你写好的文件夹',
+    ],
+    footnote: '在应用内：Protection → Ad blocking → Extensions →「Install for this browser」会写好该文件夹并复制路径。',
+  },
   shots: {
     kicker: '截图',
     title: '各平台上的样子',

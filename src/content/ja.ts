@@ -175,6 +175,26 @@ export const ja: Copy = {
     alt: 'AdFree のフィルタで広告なしに再生される LiSA の「一番の宝物」',
     caption: 'AdFree 経由の YouTube：広告なしで一本の動画。',
   },
+  extension: {
+    kicker: 'ブラウザの中で',
+    title: 'AdFree が受け取れないページ',
+    body: 'ブラウザは自分のキャッシュからページを返すことがあります。Service Worker が渡す HTML は回線を通らないため、アプリには書き換えるものがありません。拡張機能はその穴を塞ぎます。しかも拡張機能はルールを一切持ちません。アプリに何を挿入するかを問い合わせ、そのとおりに適用するので、どちらの経路でも同じものがブロックされます。',
+    points: [
+      'Service Worker がキャッシュから返したページでも動く',
+      '独自のルールなし：答えはすべてアプリから',
+      '任意：なくてもフィルタリングは動く',
+    ],
+    download: '拡張機能をダウンロード',
+    note: '展開済みフォルダー、20 KB',
+    cardName: 'AdFree page runtime',
+    cardVersion: 'Manifest V3 · Chrome 111+ · Edge、Brave、Opera も可',
+    steps: [
+      'ブラウザで chrome://extensions を開く',
+      'デベロッパーモードを有効にする',
+      'パッケージ化されていない拡張機能を読み込む → AdFree アプリが書き出したフォルダーを選ぶ',
+    ],
+    footnote: 'アプリ内：Protection → Ad blocking → Extensions →「Install for this browser」でフォルダーが書き出され、パスがコピーされます。',
+  },
   shots: {
     kicker: 'スクリーンショット',
     title: '各環境での画面',

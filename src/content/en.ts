@@ -176,6 +176,26 @@ export const en: Copy = {
     alt: 'YouTube playing 一番の宝物 by LiSA with no advertisement, filtered by AdFree',
     caption: 'YouTube through AdFree: one video, no ad break.',
   },
+  extension: {
+    kicker: 'In the browser',
+    title: 'The pages AdFree never sees',
+    body: 'A browser can answer a page out of its own cache: the service worker hands over HTML that never crossed the wire, so the app has nothing to rewrite. The extension closes that gap — and it holds no rules at all. No lists, no logic of its own: it asks the app what it would have injected and applies the answer, so both paths block the same things.',
+    points: [
+      'Works on pages a service worker served from cache',
+      'No rules of its own: every answer comes from the app',
+      'Optional — filtering works without it',
+    ],
+    download: 'Download the extension',
+    note: 'Unpacked folder, 20 KB',
+    cardName: 'AdFree page runtime',
+    cardVersion: 'Manifest V3 · Chrome 111+ · Edge, Brave, Opera too',
+    steps: [
+      'Open chrome://extensions in the browser',
+      'Turn on Developer mode',
+      'Load unpacked → the folder the AdFree app wrote for you',
+    ],
+    footnote: 'In the app: Protection → Ad blocking → Extensions → Install for this browser writes that folder and copies its path.',
+  },
   shots: {
     kicker: 'Screenshots',
     title: 'The app on each platform',
