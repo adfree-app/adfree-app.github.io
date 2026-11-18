@@ -7,10 +7,12 @@ import ScreenshotShowcase from '@/components/ScreenshotShowcase.vue'
 import YouTubeSection from '@/components/YouTubeSection.vue'
 import DownloadTabs from '@/components/DownloadTabs.vue'
 import { copy } from '@/i18n'
+import { APP } from '@/github'
 
-const releases = 'https://github.com/yuuki-kagura/adfree/releases/latest'
-const source = 'https://github.com/yuuki-kagura/adfree'
-const designNotes = 'https://github.com/yuuki-kagura/adfree/blob/main/DESIGN.md'
+const APP_URL = `https://github.com/${APP.owner}/${APP.repo}`
+const releases = `${APP_URL}/releases/latest`
+const source = APP_URL
+const designNotes = `${APP_URL}/blob/${APP.branch}/DESIGN.md`
 
 </script>
 

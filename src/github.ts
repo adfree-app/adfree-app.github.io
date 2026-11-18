@@ -6,7 +6,10 @@
 // source of two pages. One constant each, so moving the project moves every
 // link with it.
 
-export const APP = { owner: 'adfree-app', repo: 'adfree', branch: 'main' } as const
+// The app is still on its original account: only the site and the extension
+// moved to the adfree-app organisation, and a link to a repository that is not
+// there is a 404 the page would show as an empty changelog.
+export const APP = { owner: 'yuuki-kagura', repo: 'adfree', branch: 'main' } as const
 export const EXTENSION = { owner: 'adfree-app', repo: 'adfree-extension' } as const
 
 /** The app's changelog, as GitHub serves the raw file. */

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { copy } from '@/i18n'
+import { APP } from '@/github'
 import {
   error,
   humanSize,
@@ -40,7 +41,7 @@ const tabs = computed(() =>
 const files = computed(() => (release.value?.assets ?? []).filter((asset) => asset.family === tab.value))
 
 const installCommand =
-  'curl -fsSL https://raw.githubusercontent.com/yuuki-kagura/adfree/main/scripts/install-linux.sh | bash'
+  `curl -fsSL https://raw.githubusercontent.com/${APP.owner}/${APP.repo}/${APP.branch}/scripts/install-linux.sh | bash`
 
 const copied = ref(false)
 async function copyInstall() {

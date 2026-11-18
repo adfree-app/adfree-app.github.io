@@ -2,6 +2,9 @@
 import { computed, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { copy, lang, languages, setLang } from '@/i18n'
+import { APP } from '@/github'
+
+const APP_URL = `https://github.com/${APP.owner}/${APP.repo}`
 
 const open = ref(false)
 
@@ -70,7 +73,7 @@ const links = computed(() => [
             icon="i-simple-icons-github"
             color="neutral"
             variant="ghost"
-            to="https://github.com/yuuki-kagura/adfree"
+            :to="APP_URL"
             target="_blank"
             aria-label="AdFree on GitHub"
           />

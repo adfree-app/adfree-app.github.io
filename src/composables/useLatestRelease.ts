@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import { APP } from '@/github'
 
 // The download buttons are not written into the page: they are read from the
 // release itself, so a new architecture or a new package appears on the site
@@ -22,8 +23,8 @@ export type Release = {
   assets: Asset[]
 }
 
-const ENDPOINT = 'https://api.github.com/repos/yuuki-kagura/adfree/releases/latest'
-const RELEASES_PAGE = 'https://github.com/yuuki-kagura/adfree/releases'
+const ENDPOINT = `https://api.github.com/repos/${APP.owner}/${APP.repo}/releases/latest`
+const RELEASES_PAGE = `https://github.com/${APP.owner}/${APP.repo}/releases`
 
 // Assets that are release machinery rather than something to install: the Play
 // bundle, the userscripts, and the Arch debug package CI uses to prove the
