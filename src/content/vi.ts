@@ -348,14 +348,14 @@ export const vi: Copy = {
     empty: 'Chưa có bản phát hành nào.',
   },
   install: {
-    kicker: 'Một lần, trong trình duyệt của bạn',
+    kicker: 'Cài một lần trong trình duyệt',
     title: 'Cài tiện ích',
-    body: 'App không thể tự nhét tiện ích vào trình duyệt — trình duyệt chỉ cài thứ bạn bảo nó cài, và đúng là nên như vậy. Nên đây là việc làm một lần, bốn bước, và xong là xong: từ đó bản cập nhật tự đến.',
+    body: 'Trình duyệt chỉ cài tiện ích khi bạn bảo nó cài. Bốn bước dưới đây làm đúng việc đó một lần; sau đó bản cập nhật tự đến.',
     steps: [
       { title: 'Tải bản phát hành mới nhất', body: 'File zip chứa cả tiện ích: một manifest, một background script, bốn icon.' },
-      { title: 'Giải nén vào chỗ bạn sẽ giữ', body: 'Một thư mục trong home là đủ. Chrome đọc thư mục đó mỗi lần mở, nên đừng xoá nó sau khi cài.' },
-      { title: 'Mở chrome://extensions và bật Developer mode', body: 'Công tắc nằm ở góc trên bên phải. Đây là cài đặt bình thường của Chrome, không phải cảnh báo gì.' },
-      { title: 'Bấm Load unpacked rồi chọn thư mục đó', body: 'Thẻ tiện ích hiện ra với công tắc đã bật sẵn. Muốn thấy nó trên thanh công cụ thì ghim từ menu mảnh ghép.' },
+      { title: 'Giải nén vào chỗ bạn sẽ giữ', body: 'Một thư mục trong home là đủ. Chrome đọc thư mục đó mỗi lần mở, nên giữ lại.' },
+      { title: 'Mở chrome://extensions và bật Developer mode', body: 'Công tắc ở góc trên bên phải.' },
+      { title: 'Bấm Load unpacked rồi chọn thư mục đó', body: 'Thẻ hiện ra với công tắc đã bật. Muốn thấy nó trên thanh công cụ thì ghim từ menu mảnh ghép.' },
     ],
     shots: [
       { loadAlt: 'chrome://extensions tiếng Anh, nền sáng, Developer mode đang bật', installedAlt: '', caption: 'Developer mode bật, nút Load unpacked sẵn sàng.' },

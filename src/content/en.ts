@@ -349,12 +349,12 @@ export const en: Copy = {
   install: {
     kicker: 'One time, in your browser',
     title: 'Install the extension',
-    body: 'The app cannot put an extension into a browser by itself — a browser only installs what you tell it to, and that is the right way round. So this is a one-time, four-step job, and it stays done: updates arrive by themselves from then on.',
+    body: 'A browser installs an extension when you tell it to. Four steps, once; updates arrive on their own afterwards.',
     steps: [
       { title: 'Download the latest release', body: 'The zip holds the whole extension: a manifest, one background script, four icons.' },
-      { title: 'Unpack it somewhere you will keep', body: 'A folder under your home directory is fine. Chrome keeps reading it, so do not delete it afterwards.' },
-      { title: 'Open chrome://extensions and switch on Developer mode', body: 'The toggle is in the top-right corner. It is a normal Chrome setting, not a warning.' },
-      { title: 'Press Load unpacked and pick that folder', body: 'The card appears with its own switch already on. Pin it from the puzzle-piece menu if you want to see it.' },
+      { title: 'Unpack it somewhere you will keep', body: 'A folder under your home directory is fine. Chrome reads it on every start, so keep it.' },
+      { title: 'Open chrome://extensions and switch on Developer mode', body: 'The toggle is in the top-right corner.' },
+      { title: 'Press Load unpacked and pick that folder', body: 'The card appears with its switch already on. Pin it from the puzzle-piece menu if you want it on the toolbar.' },
     ],
     shots: [
       { loadAlt: 'chrome://extensions in English, with a light theme and Developer mode switched on', installedAlt: '', caption: 'Developer mode on, Load unpacked ready.' },
