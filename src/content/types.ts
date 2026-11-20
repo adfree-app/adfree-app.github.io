@@ -19,6 +19,7 @@ export type Copy = {
     features: string
     how: string
     screenshots: string
+    inspector: string
     platforms: string
     changelog: string
     extension: string
@@ -43,6 +44,15 @@ export type Copy = {
   }
   youtube: { kicker: string; title: string; body: string; points: string[]; alt: string; caption: string }
   shots: { kicker: string; title: string; body: string; platforms: ShotPlatform[] }
+  inspector: {
+    kicker: string
+    title: string
+    body: string
+    points: IconItem[]
+    how: string
+    caption: string
+    shots: { src: string; alt: string }[]
+  }
   platforms: { kicker: string; title: string; body: string; items: PlatformCard[]; getBuild: string }
   download: {
     title: string

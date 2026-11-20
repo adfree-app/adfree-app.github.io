@@ -9,6 +9,7 @@ export const ja: Copy = {
     features: '機能',
     how: '仕組み',
     screenshots: 'スクリーンショット',
+    inspector: 'インスペクタ',
     platforms: '対応環境',
     changelog: '変更履歴',
     extension: '拡張機能',
@@ -201,6 +202,46 @@ export const ja: Copy = {
       },
     ],
   },
+  inspector: {
+    kicker: 'リクエストインスペクタ',
+    title: 'アプリが扱ったリクエストと、帰ってきたもの',
+    body: 'ブラウザには決して届かない通信のためのネットワークパネルです。おなじみの列、フィルタボックス、詳細ペインに加え、ブラウザには見せられない部分 \u2014 届きながら読まれるストリーム、途中で差し替えられる応答 \u2014 も見られます。',
+    points: [
+      {
+        icon: 'i-lucide-list-filter',
+        title: 'ひとつのリスト、隠し立てなし',
+        body: 'メソッド、ホスト、ステータス、種別、サイズ、時刻。新しい順。文字でも種別でも絞り込めます: XHR、JS、CSS、ドキュメント、ソケット、画像、フォント。',
+      },
+      {
+        icon: 'i-lucide-braces',
+        title: '本文を整形表示',
+        body: 'JSON、XML、HTML、CSS、JavaScript、YAML はハイライト付きで届きます。ワイヤそのものの生表示と、テキストではない本文のバイト表示も。',
+      },
+      {
+        icon: 'i-lucide-radio',
+        title: '届きながら読むストリーム',
+        body: 'サーバー送信イベントを、接続が開いたままのうちにそれぞれの到着時刻とサイズ付きで表示します。終わらない応答を待ちません。',
+      },
+      {
+        icon: 'i-lucide-replace-all',
+        title: '差し替えられる応答',
+        body: 'URL パターンにステータス、ヘッダ、本文 \u2014 テキストでも base64 でも \u2014 を指定すると、代わりにその応答が届きます。ウィンドウを開いている間だけ有効で、次回のために保存されます。',
+      },
+    ],
+    how: 'トレイメニュー、またはホームのスイッチの下にあるボタンから開きます。',
+    caption: 'リリースした Linux ビルドから撮影: 1件に絞ったリストと、イベント単位で読まれるサーバー送信ストリーム。',
+    shots: [
+      {
+        src: '/shots/inspector-list.png',
+        alt: 'AdFree リクエストインスペクタ: リストに1件、URL・ステータス・応答ヘッダ付き',
+      },
+      {
+        src: '/shots/inspector-stream.png',
+        alt: 'AdFree リクエストインスペクタ: サーバー送信イベントのストリーム、各イベントに到着時刻とサイズ',
+      },
+    ],
+  },
+
   platforms: {
     kicker: '対応環境',
     title: 'どれを選ぶか',

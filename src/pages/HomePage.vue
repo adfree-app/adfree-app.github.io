@@ -5,6 +5,7 @@ import PhoneFrame from '@/components/PhoneFrame.vue'
 import WindowFrame from '@/components/WindowFrame.vue'
 import ScreenshotShowcase from '@/components/ScreenshotShowcase.vue'
 import YouTubeSection from '@/components/YouTubeSection.vue'
+import InspectorSection from '@/components/InspectorSection.vue'
 import DownloadTabs from '@/components/DownloadTabs.vue'
 import { copy } from '@/i18n'
 import { APP } from '@/github'
@@ -231,6 +232,8 @@ const designNotes = `${APP_URL}/blob/${APP.branch}/DESIGN.md`
     <YouTubeSection />
 
     <ScreenshotShowcase />
+
+    <InspectorSection />
 
     <!-- ------------------------------------------------------------ platforms -->
     <section id="platforms" class="border-t border-default py-20 sm:py-28">

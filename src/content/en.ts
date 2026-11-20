@@ -9,6 +9,7 @@ export const en: Copy = {
     features: 'Features',
     how: 'How it works',
     screenshots: 'Screenshots',
+    inspector: 'Inspector',
     platforms: 'Platforms',
     changelog: 'Changelog',
     extension: 'Extension',
@@ -202,6 +203,46 @@ export const en: Copy = {
       },
     ],
   },
+  inspector: {
+    kicker: 'Request inspector',
+    title: 'Every request the app handled, and what came back',
+    body: 'The inspector is a network panel for traffic that never reaches a browser: the columns, the filter box and the detail pane you already know \u2014 plus the parts a browser cannot show, like a stream read while it arrives and an answer replaced on its way out.',
+    points: [
+      {
+        icon: 'i-lucide-list-filter',
+        title: 'One list, nothing hidden',
+        body: 'Method, host, status, kind, size and time, newest first. Filter by text or by kind: XHR, JS, CSS, document, socket, image, font.',
+      },
+      {
+        icon: 'i-lucide-braces',
+        title: 'Bodies laid out',
+        body: 'JSON, XML, HTML, CSS, JavaScript and YAML arrive highlighted, with a raw view for the wire and a byte view for bodies that are not text at all.',
+      },
+      {
+        icon: 'i-lucide-radio',
+        title: 'A stream, read as it arrives',
+        body: 'Server-sent events are listed with their own arrival time and size while the connection is still open, instead of waiting for a response that never ends.',
+      },
+      {
+        icon: 'i-lucide-replace-all',
+        title: 'Answers you can replace',
+        body: 'Point a URL pattern at a status, headers and a body \u2014 text or base64 \u2014 and the client receives that answer instead. In force while the window is open, saved for the next one.',
+      },
+    ],
+    how: 'Open it from the tray menu, or from the two buttons under the switch on Home.',
+    caption: 'Captured from the released Linux build: the list filtered to one request, and a server-sent stream read event by event.',
+    shots: [
+      {
+        src: '/shots/inspector-list.png',
+        alt: 'AdFree request inspector: one request in the list, with its URL, status and response headers',
+      },
+      {
+        src: '/shots/inspector-stream.png',
+        alt: 'AdFree request inspector: a server-sent event stream, each event with its arrival time and size',
+      },
+    ],
+  },
+
   platforms: {
     kicker: 'Platforms',
     title: 'Which build to take',

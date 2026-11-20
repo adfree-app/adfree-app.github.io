@@ -20,6 +20,7 @@ const links = computed(() => [
   { label: copy.value.nav.features, href: '/#features' },
   { label: copy.value.nav.how, href: '/#how' },
   { label: copy.value.nav.screenshots, href: '/#screenshots' },
+  { label: copy.value.nav.inspector, href: '/#inspector' },
   { label: copy.value.nav.platforms, href: '/#platforms' },
   { label: copy.value.nav.extension, href: '/install-extension' },
   { label: copy.value.nav.changelog, href: '/changelog' },

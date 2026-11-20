@@ -8,6 +8,7 @@ export const vi: Copy = {
     features: 'Tính năng',
     how: 'Cách chặn',
     screenshots: 'Ảnh chụp',
+    inspector: 'Xem yêu cầu',
     platforms: 'Nền tảng',
     changelog: 'Nhật ký',
     extension: 'Tiện ích',
@@ -202,6 +203,46 @@ export const vi: Copy = {
       },
     ],
   },
+  inspector: {
+    kicker: 'Trình xem yêu cầu',
+    title: 'Mọi yêu cầu ứng dụng đã xử lý, và điều trả về',
+    body: 'Trình xem là một bảng mạng cho lưu lượng không bao giờ tới trình duyệt: cột, ô lọc và khung chi tiết bạn vẫn biết \u2014 cộng những thứ trình duyệt không thể bày ra, như một luồng được đọc trong lúc nó tới và một câu trả lời bị thay trên đường đi.',
+    points: [
+      {
+        icon: 'i-lucide-list-filter',
+        title: 'Một danh sách, không giấu gì',
+        body: 'Phương thức, máy chủ, trạng thái, loại, kích thước và thời gian, mới nhất lên đầu. Lọc theo chữ hoặc theo loại: XHR, JS, CSS, tài liệu, socket, ảnh, font.',
+      },
+      {
+        icon: 'i-lucide-braces',
+        title: 'Nội dung được dàn trang',
+        body: 'JSON, XML, HTML, CSS, JavaScript và YAML hiện ra được tô màu, kèm chế độ nguyên bản để xem dây và chế độ byte cho nội dung không phải chữ.',
+      },
+      {
+        icon: 'i-lucide-radio',
+        title: 'Luồng, đọc trong lúc tới',
+        body: 'Các sự kiện gửi từ máy chủ được liệt kê kèm thời gian và kích thước ngay khi chúng tới, trong khi kết nối còn mở \u2014 không phải chờ một phản hồi không bao giờ dứt.',
+      },
+      {
+        icon: 'i-lucide-replace-all',
+        title: 'Câu trả lời bạn có thể thay',
+        body: 'Trỏ một mẫu URL vào một trạng thái, các tiêu đề và một nội dung \u2014 chữ hoặc base64 \u2014 và client nhận đúng câu trả lời đó. Có hiệu lực khi cửa sổ mở, được lưu cho lần sau.',
+      },
+    ],
+    how: 'Mở từ menu khay, hoặc từ hai nút dưới công tắc ở Trang chủ.',
+    caption: 'Chụp từ bản Linux đã phát hành: danh sách lọc còn một yêu cầu, và một luồng sự kiện máy chủ được đọc từng sự kiện.',
+    shots: [
+      {
+        src: '/shots/inspector-list.png',
+        alt: 'Trình xem yêu cầu AdFree: một yêu cầu trong danh sách, kèm URL, trạng thái và tiêu đề trả lời',
+      },
+      {
+        src: '/shots/inspector-stream.png',
+        alt: 'Trình xem yêu cầu AdFree: luồng sự kiện máy chủ, mỗi sự kiện kèm thời gian tới và kích thước',
+      },
+    ],
+  },
+
   platforms: {
     kicker: 'Nền tảng',
     title: 'Chọn bản nào',

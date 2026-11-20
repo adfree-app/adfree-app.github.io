@@ -8,6 +8,7 @@ export const zh: Copy = {
     features: '功能',
     how: '工作方式',
     screenshots: '截图',
+    inspector: '检查器',
     platforms: '平台',
     changelog: '更新日志',
     extension: '扩展',
@@ -197,6 +198,46 @@ export const zh: Copy = {
       },
     ],
   },
+  inspector: {
+    kicker: '请求检查器',
+    title: '应用处理的每个请求，以及返回的内容',
+    body: '检查器是给永远不会到达浏览器的流量准备的网络面板: 熟悉的列、过滤框和详情面板 \u2014 加上浏览器无法展示的部分，比如一边到达一边读取的流、以及在中途被替换的应答。',
+    points: [
+      {
+        icon: 'i-lucide-list-filter',
+        title: '一个列表，毫无隐藏',
+        body: '方法、主机、状态、类型、大小和时间，新的在前。可按文字或类型过滤: XHR、JS、CSS、文档、套接字、图片、字体。',
+      },
+      {
+        icon: 'i-lucide-braces',
+        title: '正文排版展示',
+        body: 'JSON、XML、HTML、CSS、JavaScript 和 YAML 都带高亮显示，另有原始视图看线上字节，以及给非文本正文用的字节视图。',
+      },
+      {
+        icon: 'i-lucide-radio',
+        title: '边到达边读取的流',
+        body: '连接还开着的时候，服务器推送事件就带着各自的到达时间和大小列出，不必等一个永不结束的响应。',
+      },
+      {
+        icon: 'i-lucide-replace-all',
+        title: '可以替换的应答',
+        body: '把 URL 模式指向一个状态、一组头和一段正文 \u2014 文本或 base64 \u2014 客户端就会收到那个应答。窗口开着时生效，并保存下来供下次使用。',
+      },
+    ],
+    how: '从托盘菜单，或首页开关下方的两个按钮打开。',
+    caption: '截取自已发布的 Linux 构建: 过滤到一条请求的列表，以及逐事件读取的服务器推送流。',
+    shots: [
+      {
+        src: '/shots/inspector-list.png',
+        alt: 'AdFree 请求检查器: 列表中的一条请求，带 URL、状态和响应头',
+      },
+      {
+        src: '/shots/inspector-stream.png',
+        alt: 'AdFree 请求检查器: 服务器推送事件流，每个事件带到达时间和大小',
+      },
+    ],
+  },
+
   platforms: {
     kicker: '平台',
     title: '该下哪个包',
