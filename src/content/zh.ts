@@ -225,15 +225,23 @@ export const zh: Copy = {
       },
     ],
     how: '从托盘菜单，或首页开关下方的两个按钮打开。',
-    caption: '截取自已发布的 Linux 构建: 过滤到一条请求的列表，以及逐事件读取的服务器推送流。',
+    caption: '截取自已发布的 Linux 构建: 列表、排版后的正文、逐事件读取的流，以及替换将要发出的应答。',
     shots: [
       {
         src: '/shots/inspector-list.png',
-        alt: 'AdFree 请求检查器: 列表中的一条请求，带 URL、状态和响应头',
+        alt: 'AdFree 请求检查器: 列表中的一条请求，带 URL、状态、响应头，上方是屏蔽、解除、替换按钮',
+      },
+      {
+        src: '/shots/inspector-body.png',
+        alt: 'AdFree 请求检查器: 排版并高亮的 JSON 响应，上方是排版、原始、字节三个按钮',
       },
       {
         src: '/shots/inspector-stream.png',
         alt: 'AdFree 请求检查器: 服务器推送事件流，每个事件带到达时间和大小',
+      },
+      {
+        src: '/shots/inspector-override.png',
+        alt: 'AdFree 请求检查器: 替换对话框，显示将要发出的应答的状态、头和正文',
       },
     ],
   },

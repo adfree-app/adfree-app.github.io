@@ -229,15 +229,23 @@ export const ja: Copy = {
       },
     ],
     how: 'トレイメニュー、またはホームのスイッチの下にあるボタンから開きます。',
-    caption: 'リリースした Linux ビルドから撮影: 1件に絞ったリストと、イベント単位で読まれるサーバー送信ストリーム。',
+    caption: 'リリースした Linux ビルドから撮影: リスト、整形された本文、イベント単位で読むストリーム、差し替えが送る応答。',
     shots: [
       {
         src: '/shots/inspector-list.png',
-        alt: 'AdFree リクエストインスペクタ: リストに1件、URL・ステータス・応答ヘッダ付き',
+        alt: 'AdFree リクエストインスペクタ: リストの1件と、URL・ステータス・応答ヘッダ、その上にブロック・解除・差し替えのボタン',
+      },
+      {
+        src: '/shots/inspector-body.png',
+        alt: 'AdFree リクエストインスペクタ: 整形され色分けされた JSON の応答と、その上の整形・生・バイトのチップ',
       },
       {
         src: '/shots/inspector-stream.png',
         alt: 'AdFree リクエストインスペクタ: サーバー送信イベントのストリーム、各イベントに到着時刻とサイズ',
+      },
+      {
+        src: '/shots/inspector-override.png',
+        alt: 'AdFree リクエストインスペクタ: 差し替えダイアログ。送信される応答のステータス・ヘッダ・本文を表示',
       },
     ],
   },

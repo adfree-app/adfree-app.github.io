@@ -230,15 +230,23 @@ export const vi: Copy = {
       },
     ],
     how: 'Mở từ menu khay, hoặc từ hai nút dưới công tắc ở Trang chủ.',
-    caption: 'Chụp từ bản Linux đã phát hành: danh sách lọc còn một yêu cầu, và một luồng sự kiện máy chủ được đọc từng sự kiện.',
+    caption: 'Chụp từ bản Linux đã phát hành: danh sách, một nội dung được dàn trang, một luồng đọc từng sự kiện, và câu trả lời mà một bản ghi đè sẽ gửi đi.',
     shots: [
       {
         src: '/shots/inspector-list.png',
-        alt: 'Trình xem yêu cầu AdFree: một yêu cầu trong danh sách, kèm URL, trạng thái và tiêu đề trả lời',
+        alt: 'Trình xem yêu cầu AdFree: một yêu cầu trong danh sách, kèm URL, trạng thái, tiêu đề trả lời và ba nút chặn, bỏ chặn, ghi đè phía trên',
+      },
+      {
+        src: '/shots/inspector-body.png',
+        alt: 'Trình xem yêu cầu AdFree: một trả lời JSON được dàn trang và tô màu, phía trên là các chip đẹp, nguyên bản, nhị phân',
       },
       {
         src: '/shots/inspector-stream.png',
         alt: 'Trình xem yêu cầu AdFree: luồng sự kiện máy chủ, mỗi sự kiện kèm thời gian tới và kích thước',
+      },
+      {
+        src: '/shots/inspector-override.png',
+        alt: 'Trình xem yêu cầu AdFree: hộp thoại ghi đè, hiện trạng thái, tiêu đề và nội dung của câu trả lời sẽ gửi đi',
       },
     ],
   },

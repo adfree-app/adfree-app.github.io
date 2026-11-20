@@ -19,10 +19,23 @@ import WindowFrame from './WindowFrame.vue'
         </p>
       </div>
 
+      <!-- The list is the first thing the window shows, so it is the first
+           thing here; the body and the stream sit side by side because they are
+           two answers to the same question — what came back. -->
       <div class="mx-auto mt-12 max-w-4xl">
         <WindowFrame
           :src="copy.inspector.shots[0]!.src"
           :alt="copy.inspector.shots[0]!.alt"
+          :title="copy.inspector.kicker"
+        />
+      </div>
+
+      <div class="mx-auto mt-6 grid max-w-5xl gap-6 md:grid-cols-2">
+        <WindowFrame
+          v-for="shot in copy.inspector.shots.slice(1, 3)"
+          :key="shot.src"
+          :src="shot.src"
+          :alt="shot.alt"
           :title="copy.inspector.kicker"
         />
       </div>
@@ -45,8 +58,8 @@ import WindowFrame from './WindowFrame.vue'
 
       <div class="mx-auto mt-10 max-w-4xl">
         <WindowFrame
-          :src="copy.inspector.shots[1]!.src"
-          :alt="copy.inspector.shots[1]!.alt"
+          :src="copy.inspector.shots[3]!.src"
+          :alt="copy.inspector.shots[3]!.alt"
           :title="copy.inspector.kicker"
         />
         <p class="mt-4 text-xs/5 text-dimmed">{{ copy.inspector.caption }}</p>

@@ -230,15 +230,23 @@ export const en: Copy = {
       },
     ],
     how: 'Open it from the tray menu, or from the two buttons under the switch on Home.',
-    caption: 'Captured from the released Linux build: the list filtered to one request, and a server-sent stream read event by event.',
+    caption: 'Captured from the released Linux build: the list, a body laid out, a stream read event by event, and the answer a replacement will send.',
     shots: [
       {
         src: '/shots/inspector-list.png',
-        alt: 'AdFree request inspector: one request in the list, with its URL, status and response headers',
+        alt: 'AdFree request inspector: one request in the list, with its URL, status and response headers, and the block, unblock and replace buttons above them',
+      },
+      {
+        src: '/shots/inspector-body.png',
+        alt: 'AdFree request inspector: a JSON response laid out and highlighted, with the pretty, raw and byte chips above it',
       },
       {
         src: '/shots/inspector-stream.png',
         alt: 'AdFree request inspector: a server-sent event stream, each event with its arrival time and size',
+      },
+      {
+        src: '/shots/inspector-override.png',
+        alt: 'AdFree request inspector: the replace dialog, with the status, headers and body of the answer that will be sent',
       },
     ],
   },
